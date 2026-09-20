@@ -1,12 +1,10 @@
-<!-- ========================================================= -->
-<!--                 CYBERPUNK FUTURISTIC README               -->
-<!-- ========================================================= -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=38&duration=2500&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&height=80&lines=Hi+👋+I'm+Adithya;AI+%7C+Full+Stack+Developer;MERN+Developer;Java+DSA+Enthusiast;Building+the+Future+with+Code+⚡" />
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5FF,50:6A00FF,100:FF00EA&height=250&section=header&text=WELCOME%20TO%20MY%20GITHUB&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=40"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/light.svg">
+  <img alt="Adithya Sunderrajan" src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/light.svg">
+</picture>
 
 </div>
 

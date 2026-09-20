@@ -1,0 +1,38 @@
+{
+  "portrait": {
+    "note": "Generated with Pillow and NumPy. SciPy is unavailable in this Codex runtime, so logo traveller matching uses a deterministic global-greedy shortest-edge fallback.",
+    "source_image": "assets/source/portrait.png",
+    "crop_box_xyxy": [
+      148,
+      282,
+      960,
+      1203
+    ],
+    "subject_mask_coverage": 0.6061,
+    "dark_dot_count": 16000,
+    "light_dot_count": 16000
+  },
+  "travellers": {
+    "logo_note": "Fallback generated masks were used because no logo reference images were attached.",
+    "traveller_count": 900,
+    "mean_match_distance_1_to_2": 31.006,
+    "mean_match_distance_2_to_3": 27.361,
+    "max_match_distance": 187.609
+  },
+  "themes": {
+    "dark": {
+      "intro_evenness_metric": 0.1056,
+      "straight_boundary_metric": 0.1134,
+      "band_count": 94,
+      "intro_group_count": 60,
+      "svg_bytes": 1115374
+    },
+    "light": {
+      "intro_evenness_metric": 0.1355,
+      "straight_boundary_metric": 0.0186,
+      "band_count": 94,
+      "intro_group_count": 60,
+      "svg_bytes": 1099620
+    }
+  }
+}
