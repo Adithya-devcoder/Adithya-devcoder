@@ -43,7 +43,9 @@
 <br/>
 
 <!-- ===== PROJECTS / PINNED REPOSITORIES ===== -->
-<!-- GitHub's native pinned repositories remain below this profile README. No copied project assets are used here. -->
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/projects.svg" alt="Projects list for Adithya Sunderrajan" />
+</div>
 
 <!-- ===== SOCIAL BADGES ===== -->
 <br/>
