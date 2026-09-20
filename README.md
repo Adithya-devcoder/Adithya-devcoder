@@ -49,75 +49,39 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <sub>• Adithya-devcoder/SlickTrace</sub>
-      <h3><a href="https://github.com/Adithya-devcoder/SlickTrace">SlickTrace_</a></h3>
-      <p>Public repository.</p>
-      <p>
-        <code>Python</code>
-        <code>TypeScript</code>
-        <code>Shell</code>
-      </p>
-      <sub>★ 0 · updated Sep 2026</sub>
+    <td width="50%">
+      <a href="https://github.com/Adithya-devcoder/SlickTrace">
+        <img src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/assets/projects/slicktrace.svg" alt="SlickTrace project card" width="100%" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <sub>• Adithya-devcoder/UrbanPulse-Smart-India-Hackathon-</sub>
-      <h3><a href="https://github.com/Adithya-devcoder/UrbanPulse-Smart-India-Hackathon-">UrbanPulse_</a></h3>
-      <p>Public repository.</p>
-      <p>
-        <code>Python</code>
-        <code>TypeScript</code>
-        <code>JavaScript</code>
-      </p>
-      <sub>★ 0 · updated Sep 2026</sub>
+    <td width="50%">
+      <a href="https://github.com/Adithya-devcoder/UrbanPulse-Smart-India-Hackathon-">
+        <img src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/assets/projects/urbanpulse.svg" alt="UrbanPulse project card" width="100%" />
+      </a>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <sub>• Adithya-devcoder/HealthCare-Access-Inequality-Analysis-and-Planning-System</sub>
-      <h3><a href="https://github.com/Adithya-devcoder/HealthCare-Access-Inequality-Analysis-and-Planning-System">HealthCare Access_</a></h3>
-      <p>Data-driven platform for analyzing healthcare accessibility and underserved regions.</p>
-      <p>
-        <code>TypeScript</code>
-        <code>CSS</code>
-        <code>JavaScript</code>
-      </p>
-      <sub>★ 0 · updated May 2026</sub>
+    <td width="50%">
+      <a href="https://github.com/Adithya-devcoder/HealthCare-Access-Inequality-Analysis-and-Planning-System">
+        <img src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/assets/projects/healthcare-access.svg" alt="HealthCare Access project card" width="100%" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <sub>• Adithya-devcoder/Ocean</sub>
-      <h3><a href="https://github.com/Adithya-devcoder/Ocean">Ocean_</a></h3>
-      <p>AI-powered platform for oceanographic and biodiversity data insights.</p>
-      <p>
-        <code>TypeScript</code>
-        <code>Python</code>
-        <code>CSS</code>
-      </p>
-      <sub>★ 0 · updated Mar 2026</sub>
+    <td width="50%">
+      <a href="https://github.com/Adithya-devcoder/Ocean">
+        <img src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/assets/projects/ocean.svg" alt="Ocean project card" width="100%" />
+      </a>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <sub>• Adithya-devcoder/Linkedin-AI-Booster-Extension</sub>
-      <h3><a href="https://github.com/Adithya-devcoder/Linkedin-AI-Booster-Extension">LinkedIn AI Booster_</a></h3>
-      <p>Public repository.</p>
-      <p>
-        <code>JavaScript</code>
-        <code>CSS</code>
-        <code>HTML</code>
-      </p>
-      <sub>★ 0 · updated Mar 2026</sub>
+    <td width="50%">
+      <a href="https://github.com/Adithya-devcoder/Linkedin-AI-Booster-Extension">
+        <img src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/assets/projects/linkedin-ai-booster.svg" alt="LinkedIn AI Booster project card" width="100%" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <sub>• Adithya-devcoder/DevCoder-portfolio-website</sub>
-      <h3><a href="https://github.com/Adithya-devcoder/DevCoder-portfolio-website">DevCoder Portfolio_</a></h3>
-      <p>Public repository.</p>
-      <p>
-        <code>TypeScript</code>
-        <code>CSS</code>
-        <code>JavaScript</code>
-      </p>
-      <sub>★ 0 · updated May 2026</sub>
+    <td width="50%">
+      <a href="https://github.com/Adithya-devcoder/DevCoder-portfolio-website">
+        <img src="https://raw.githubusercontent.com/Adithya-devcoder/Adithya-devcoder/main/assets/projects/devcoder-portfolio.svg" alt="DevCoder Portfolio project card" width="100%" />
+      </a>
     </td>
   </tr>
 </table>
