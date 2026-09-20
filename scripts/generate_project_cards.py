@@ -85,6 +85,42 @@ def wrap(value: str, width: int, lines: int) -> list[str]:
     return wrapped or [""]
 
 
+def icon(slug: str, accent: str) -> str:
+    if slug == "slicktrace":
+        return f'''
+<path d="M30 80L37 72L44 76L52 64" fill="none" stroke="{accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="30" cy="80" r="3" fill="{accent}"/>
+<circle cx="37" cy="72" r="3" fill="#A78BFA"/>
+<circle cx="44" cy="76" r="3" fill="#10B981"/>
+<circle cx="52" cy="64" r="3" fill="{accent}"/>
+'''
+    if slug == "urbanpulse":
+        return f'''
+<path d="M29 82V70H35V82M39 82V62H45V82M49 82V67H55V82" fill="none" stroke="{accent}" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M28 73H34L38 68L43 78L47 72H56" fill="none" stroke="#10B981" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+    if slug == "healthcare-access":
+        return f'''
+<rect x="30" y="64" width="25" height="18" rx="4" fill="none" stroke="{accent}" stroke-width="2.6"/>
+<path d="M42.5 59V87M34 73H51" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
+'''
+    if slug == "ocean":
+        return f'''
+<path d="M28 76C34 68 40 68 46 76C51 83 57 83 62 76" fill="none" stroke="{accent}" stroke-width="3" stroke-linecap="round"/>
+<path d="M28 84C34 78 40 78 46 84C51 90 57 90 62 84" fill="none" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
+'''
+    if slug == "linkedin-ai-booster":
+        return f'''
+<text x="33" y="81" class="title" font-size="20" fill="{accent}">in</text>
+<path d="M52 61L58 73H53L59 87" fill="none" stroke="#22D3EE" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+    return f'''
+<path d="M36 67L28 75L36 83" fill="none" stroke="{accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 67L58 75L50 83" fill="none" stroke="{accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46 62L40 88" fill="none" stroke="#22D3EE" stroke-width="2.8" stroke-linecap="round"/>
+'''
+
+
 def donut(cx: int, cy: int, radius: int, languages: list[tuple[str, int, str]]) -> str:
     circumference = 2 * math.pi * radius
     offset = 0.0
@@ -110,7 +146,7 @@ def card(project: dict[str, object], index: int) -> str:
     languages = project["languages"]  # type: ignore[assignment]
     assert isinstance(languages, list)
     header = truncate(f"Adithya-devcoder/{repo}", 56)
-    description_lines = wrap(description, 54, 2)
+    description_lines = wrap(description, 38, 2)
 
     legend = []
     for i, (name, pct, color) in enumerate(languages):
@@ -140,8 +176,8 @@ def card(project: dict[str, object], index: int) -> str:
 <text x="31" y="21" class="mono" font-size="11" fill="#94A3B8">{esc(header)}</text>
 <circle cx="542" cy="17" r="4" fill="#64748B"/>
 <rect x="22" y="55" width="40" height="40" rx="9" fill="{accent}" opacity="0.16" stroke="{accent}" stroke-width="2"/>
-<text x="42" y="81" text-anchor="middle" class="title" font-size="17" fill="{accent}">{esc(title[:1].upper())}</text>
-<text x="73" y="67" class="title" font-size="17" fill="#F8FAFC">{esc(title)}<tspan fill="#22D3EE">_</tspan></text>
+{icon(str(project["slug"]), accent)}
+<text x="73" y="67" class="title" font-size="17" fill="#F8FAFC">{esc(title)}<tspan fill="#22D3EE">_<animate attributeName="opacity" dur="1s" values="1;1;0;0;1" keyTimes="0;0.45;0.46;0.9;1" repeatCount="indefinite"/></tspan></text>
 {''.join(f'<text x="73" y="{88 + i * 15}" class="mono" font-size="11" fill="#CBD5E1">{esc(line)}</text>' for i, line in enumerate(description_lines))}
 {''.join(legend)}
 {donut(516, 91, 27, languages)}
