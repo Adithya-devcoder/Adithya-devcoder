@@ -25,14 +25,14 @@
       "straight_boundary_metric": 0.1134,
       "band_count": 94,
       "intro_group_count": 60,
-      "svg_bytes": 1115374
+      "svg_bytes": 1119567
     },
     "light": {
       "intro_evenness_metric": 0.1355,
       "straight_boundary_metric": 0.0186,
       "band_count": 94,
       "intro_group_count": 60,
-      "svg_bytes": 1099620
+      "svg_bytes": 1103813
     }
   }
 }

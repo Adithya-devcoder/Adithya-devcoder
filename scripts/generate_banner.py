@@ -36,7 +36,7 @@ PORTRAIT_DOT_TARGET = 16000
 PROFILE = {
     "name": "Adithya Sunderrajan",
     "username": "Adithya-devcoder",
-    "role": "Full-Stack Developer",
+    "role": "3rd Year CSE / Full-Stack Developer",
     "location": "Chennai, India",
     "education": "BE CSE, Rajalakshmi Engineering College",
     "status": "Building + Learning + Shipping",
@@ -53,23 +53,26 @@ PROFILE = {
     "facebook": "skipped",
 }
 
-ROWS = [
+INFO_ROWS = [
     ("Subject", PROFILE["name"]),
     ("Role", PROFILE["role"]),
     ("Origin", PROFILE["location"]),
-    ("Education", PROFILE["education"]),
+    ("Education", "BE CSE, Rajalakshmi Engg. College"),
     ("Status", PROFILE["status"]),
-    ("ToolChain", PROFILE["toolchain"]),
-    ("Core.Lang", PROFILE["languages"]),
-    ("Core.Frontend", PROFILE["frontend"]),
+    ("ToolChain", "VS Code, Git, Android Studio, Figma"),
+    ("Core.Lang", "Java, Python, C++, JavaScript, SQL"),
+    ("Core.Frontend", "React, Tailwind CSS"),
     ("Core.Backend", PROFILE["backend"]),
     ("Core.Database", PROFILE["database"]),
     ("Core.Infra", PROFILE["infra"]),
+]
+
+CONTACT_ROWS = [
     ("Grid.Mail", PROFILE["mail"]),
-    ("Grid.Portfolio", PROFILE["portfolio"]),
-    ("Grid.LinkedIn", PROFILE["linkedin"]),
-    ("Grid.GitHub", PROFILE["github"]),
-    ("Grid.Facebook", PROFILE["facebook"]),
+    ("Grid.Portfolio", "coming soon"),
+    ("Grid.LinkedIn", "adithyadevcoder"),
+    ("Grid.GitHub", "@" + PROFILE["username"]),
+    ("Grid.LeetCode", "Adithya_S_devcoder"),
 ]
 
 
@@ -516,9 +519,58 @@ def leader_row(label: str, value: str, width: int = 72) -> str:
     return f"{label_text}{'.' * dots}{value}"
 
 
-def svg_text(x: float, y: float, text: str, color: str, size: int, cls: str = "mono", length: int | None = None) -> str:
+def svg_text(
+    x: float,
+    y: float,
+    text: str,
+    color: str,
+    size: int,
+    cls: str = "mono",
+    length: int | None = None,
+    anchor: str | None = None,
+) -> str:
     length_attr = f' textLength="{length}" lengthAdjust="spacingAndGlyphs"' if length else ""
-    return f'<text class="{cls}" x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{color}"{length_attr}>{html.escape(text)}</text>'
+    anchor_attr = f' text-anchor="{anchor}"' if anchor else ""
+    return f'<text class="{cls}" x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{color}"{length_attr}{anchor_attr}>{html.escape(text)}</text>'
+
+
+def system_info_row(t: dict[str, str], y: float, label: str, value: str) -> str:
+    label_x = 540
+    leader_x = 652
+    value_x = 1094
+    value_width = min(390, max(86, len(value) * 7.35))
+    value_bg_x = value_x - value_width - 6
+    leader_end = max(leader_x + 36, value_bg_x - 12)
+    return "\n".join(
+        [
+            f'  {svg_text(label_x, y, label, t["chrome"], 13)}',
+            f'  <path d="M{leader_x:.1f} {y - 4:.1f}H{leader_end:.1f}" stroke="{t["muted"]}" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>',
+            f'  <rect x="{value_bg_x:.1f}" y="{y - 15:.1f}" width="{value_width + 12:.1f}" height="18" fill="{t["panel"]}" opacity="0.96"/>',
+            f'  {svg_text(value_x, y, value, t["text"], 13, "title", anchor="end")}',
+        ]
+    )
+
+
+def system_info_block(t: dict[str, str]) -> str:
+    nodes = []
+    start_y = 184
+    row_step = 18
+    for i, (label, value) in enumerate(INFO_ROWS):
+        nodes.append(system_info_row(t, start_y + i * row_step, label, value))
+
+    contact_y = 391
+    nodes.append(svg_text(540, contact_y, "- Contact", t["muted"], 13))
+    nodes.append(
+        f'<path d="M642 {contact_y - 4}H1094" stroke="{t["muted"]}" stroke-width="1" '
+        'stroke-dasharray="5 7" opacity="0.46"/>'
+    )
+    for i, (label, value) in enumerate(CONTACT_ROWS):
+        nodes.append(system_info_row(t, 414 + i * row_step, label, value))
+
+    nodes.append(svg_text(540, 518, "> More about me & projects below in README", t["muted"], 12))
+    nodes.append(f'<rect x="883" y="505" width="8" height="17" fill="{t["chrome"]}" opacity="0.13"/>')
+    nodes.append(svg_text(895, 518, "v", t["chrome"], 12, "title"))
+    return "\n".join(nodes)
 
 
 def base_svg(theme_name: str, portrait: np.ndarray, travellers: np.ndarray) -> tuple[str, dict[str, float | int]]:
@@ -572,11 +624,9 @@ def base_svg(theme_name: str, portrait: np.ndarray, travellers: np.ndarray) -> t
             f'values="0;0;1;1;1;1;1;0" keyTimes="{kt}"/></circle>'
         )
 
-    rows = []
-    row_x = 540
-    row_y = 170
-    for i, (label, value) in enumerate(ROWS):
-        rows.append(svg_text(row_x, row_y + i * 23, leader_row(label, value), t["muted"], 14, length=555))
+    system_info = system_info_block(t)
+    mail_pill_width = 268
+    terminal_title = f'{PROFILE["mail"]} - % ./profile.sh --live'
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="Animated terminal profile banner for {html.escape(PROFILE["name"])}">
 <title>{html.escape(PROFILE["name"])} - profile.sh --live</title>
@@ -597,7 +647,7 @@ def base_svg(theme_name: str, portrait: np.ndarray, travellers: np.ndarray) -> t
 <circle cx="52" cy="44" r="7" fill="#EF4444"/>
 <circle cx="76" cy="44" r="7" fill="#F59E0B"/>
 <circle cx="100" cy="44" r="7" fill="#10B981"/>
-{svg_text(132, 49, "profile.sh --live", t["text"], 15, "title")}
+{svg_text(WIDTH / 2, 49, terminal_title, t["muted"], 13, "mono", anchor="middle")}
 <g>
   <rect x="56" y="104" width="404" height="424" rx="10" fill="none" stroke="{t["chrome"]}" stroke-width="1.4"/>
   <path d="M56 138H460" stroke="{t["faint"]}" stroke-width="1"/>
@@ -626,9 +676,14 @@ def base_svg(theme_name: str, portrait: np.ndarray, travellers: np.ndarray) -> t
   <rect x="512" y="104" width="614" height="424" rx="10" fill="none" stroke="{t["chrome"]}" stroke-width="1.4"/>
   <path d="M512 138H1126" stroke="{t["faint"]}" stroke-width="1"/>
   {svg_text(534, 128, "SYSTEM.INFO", t["chrome"], 13, "title")}
-  <rect x="944" y="113" width="154" height="28" rx="14" fill="{t["accent"]}" opacity="0.18"/>
-  {svg_text(966, 132, "@" + PROFILE["username"], t["accent"], 14, "title")}
-  {''.join(rows)}
+  <path d="M652 124H1058" stroke="{t["faint"]}" stroke-width="1"/>
+  <circle cx="1084" cy="124" r="2.8" fill="{t["badge"]}">
+    <animate attributeName="opacity" dur="1.2s" values="0.3;1;0.3" repeatCount="indefinite"/>
+  </circle>
+  {svg_text(1095, 128, "LIVE", t["badge"], 11, "title")}
+  <rect x="540" y="149" width="{mail_pill_width}" height="22" rx="4" fill="{t["portrait"]}" opacity="0.86"/>
+  {svg_text(552, 164, PROFILE["mail"], "#FFFFFF", 12, "title")}
+{system_info}
 </g>
 <path d="M42 562H1138" stroke="{t["faint"]}" stroke-width="1" stroke-dasharray="5 8"/>
 {svg_text(56, 578, "phase.1/banner :: generated source retained in /scripts and /assets/data", t["muted"], 12)}

@@ -17,7 +17,7 @@
 <circle cx="52" cy="44" r="7" fill="#EF4444"/>
 <circle cx="76" cy="44" r="7" fill="#F59E0B"/>
 <circle cx="100" cy="44" r="7" fill="#10B981"/>
-<text class="title" x="132.0" y="49.0" font-size="15" fill="#F8FAFC">profile.sh --live</text>
+<text class="mono" x="590.0" y="49.0" font-size="13" fill="#94A3B8" text-anchor="middle">adithya.s.devcoder@gmail.com - % ./profile.sh --live</text>
 <g>
   <rect x="56" y="104" width="404" height="424" rx="10" fill="none" stroke="#22D3EE" stroke-width="1.4"/>
   <path d="M56 138H460" stroke="#1E293B" stroke-width="1"/>
@@ -46,9 +46,82 @@
   <rect x="512" y="104" width="614" height="424" rx="10" fill="none" stroke="#22D3EE" stroke-width="1.4"/>
   <path d="M512 138H1126" stroke="#1E293B" stroke-width="1"/>
   <text class="title" x="534.0" y="128.0" font-size="13" fill="#22D3EE">SYSTEM.INFO</text>
-  <rect x="944" y="113" width="154" height="28" rx="14" fill="#10B981" opacity="0.18"/>
-  <text class="title" x="966.0" y="132.0" font-size="14" fill="#10B981">@Adithya-devcoder</text>
-  <text class="mono" x="540.0" y="170.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">SUBJECT..............................................Adithya Sunderrajan</text><text class="mono" x="540.0" y="193.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">ROLE................................................Full-Stack Developer</text><text class="mono" x="540.0" y="216.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">ORIGIN....................................................Chennai, India</text><text class="mono" x="540.0" y="239.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">EDUCATION........................BE CSE, Rajalakshmi Engineering College</text><text class="mono" x="540.0" y="262.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">STATUS....................................Building + Learning + Shipping</text><text class="mono" x="540.0" y="285.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">TOOLCHAIN....................VS Code, Git, GitHub, Android Studio, Figma</text><text class="mono" x="540.0" y="308.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">CORE.LANG..........................Java, Python, C, C++, JavaScript, SQL</text><text class="mono" x="540.0" y="331.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">CORE.FRONTEND.................HTML, CSS, JavaScript, React, Tailwind CSS</text><text class="mono" x="540.0" y="354.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">CORE.BACKEND...................................FastAPI, Node.js, Express</text><text class="mono" x="540.0" y="377.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">CORE.DATABASE..........................................MySQL, PostgreSQL</text><text class="mono" x="540.0" y="400.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">CORE.INFRA...................................AWS, GitHub Actions, Vercel</text><text class="mono" x="540.0" y="423.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">GRID.MAIL...................................adithya.s.devcoder@gmail.com</text><text class="mono" x="540.0" y="446.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">GRID.PORTFOLIO.....................................PORTFOLIO_URL_PENDING</text><text class="mono" x="540.0" y="469.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">GRID.LINKEDIN............................linkedin.com/in/adithyadevcoder</text><text class="mono" x="540.0" y="492.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">GRID.GITHUB..................................github.com/Adithya-devcoder</text><text class="mono" x="540.0" y="515.0" font-size="14" fill="#94A3B8" textLength="555" lengthAdjust="spacingAndGlyphs">GRID.FACEBOOK....................................................skipped</text>
+  <path d="M652 124H1058" stroke="#1E293B" stroke-width="1"/>
+  <circle cx="1084" cy="124" r="2.8" fill="#EF4444">
+    <animate attributeName="opacity" dur="1.2s" values="0.3;1;0.3" repeatCount="indefinite"/>
+  </circle>
+  <text class="title" x="1095.0" y="128.0" font-size="11" fill="#EF4444">LIVE</text>
+  <rect x="540" y="149" width="268" height="22" rx="4" fill="#A78BFA" opacity="0.86"/>
+  <text class="title" x="552.0" y="164.0" font-size="12" fill="#FFFFFF">adithya.s.devcoder@gmail.com</text>
+  <text class="mono" x="540.0" y="184.0" font-size="13" fill="#22D3EE">Subject</text>
+  <path d="M652.0 180.0H936.4" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="948.4" y="169.0" width="151.7" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="184.0" font-size="13" fill="#F8FAFC" text-anchor="end">Adithya Sunderrajan</text>
+  <text class="mono" x="540.0" y="202.0" font-size="13" fill="#22D3EE">Role</text>
+  <path d="M652.0 198.0H818.8" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="830.8" y="187.0" width="269.2" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="202.0" font-size="13" fill="#F8FAFC" text-anchor="end">3rd Year CSE / Full-Stack Developer</text>
+  <text class="mono" x="540.0" y="220.0" font-size="13" fill="#22D3EE">Origin</text>
+  <path d="M652.0 216.0H973.1" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="985.1" y="205.0" width="114.9" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="220.0" font-size="13" fill="#F8FAFC" text-anchor="end">Chennai, India</text>
+  <text class="mono" x="540.0" y="238.0" font-size="13" fill="#22D3EE">Education</text>
+  <path d="M652.0 234.0H833.5" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="845.5" y="223.0" width="254.5" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="238.0" font-size="13" fill="#F8FAFC" text-anchor="end">BE CSE, Rajalakshmi Engg. College</text>
+  <text class="mono" x="540.0" y="256.0" font-size="13" fill="#22D3EE">Status</text>
+  <path d="M652.0 252.0H855.5" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="867.5" y="241.0" width="232.5" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="256.0" font-size="13" fill="#F8FAFC" text-anchor="end">Building + Learning + Shipping</text>
+  <text class="mono" x="540.0" y="274.0" font-size="13" fill="#22D3EE">ToolChain</text>
+  <path d="M652.0 270.0H818.8" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="830.8" y="259.0" width="269.2" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="274.0" font-size="13" fill="#F8FAFC" text-anchor="end">VS Code, Git, Android Studio, Figma</text>
+  <text class="mono" x="540.0" y="292.0" font-size="13" fill="#22D3EE">Core.Lang</text>
+  <path d="M652.0 288.0H826.1" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="838.1" y="277.0" width="261.9" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="292.0" font-size="13" fill="#F8FAFC" text-anchor="end">Java, Python, C++, JavaScript, SQL</text>
+  <text class="mono" x="540.0" y="310.0" font-size="13" fill="#22D3EE">Core.Frontend</text>
+  <path d="M652.0 306.0H936.4" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="948.4" y="295.0" width="151.7" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="310.0" font-size="13" fill="#F8FAFC" text-anchor="end">React, Tailwind CSS</text>
+  <text class="mono" x="540.0" y="328.0" font-size="13" fill="#22D3EE">Core.Backend</text>
+  <path d="M652.0 324.0H892.2" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="904.2" y="313.0" width="195.8" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="328.0" font-size="13" fill="#F8FAFC" text-anchor="end">FastAPI, Node.js, Express</text>
+  <text class="mono" x="540.0" y="346.0" font-size="13" fill="#22D3EE">Core.Database</text>
+  <path d="M652.0 342.0H951.0" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="963.0" y="331.0" width="136.9" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="346.0" font-size="13" fill="#F8FAFC" text-anchor="end">MySQL, PostgreSQL</text>
+  <text class="mono" x="540.0" y="364.0" font-size="13" fill="#22D3EE">Core.Infra</text>
+  <path d="M652.0 360.0H877.5" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="889.5" y="349.0" width="210.4" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="364.0" font-size="13" fill="#F8FAFC" text-anchor="end">AWS, GitHub Actions, Vercel</text>
+<text class="mono" x="540.0" y="391.0" font-size="13" fill="#94A3B8">- Contact</text>
+<path d="M642 387H1094" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5 7" opacity="0.46"/>
+  <text class="mono" x="540.0" y="414.0" font-size="13" fill="#22D3EE">Grid.Mail</text>
+  <path d="M652.0 410.0H870.2" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="882.2" y="399.0" width="217.8" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="414.0" font-size="13" fill="#F8FAFC" text-anchor="end">adithya.s.devcoder@gmail.com</text>
+  <text class="mono" x="540.0" y="432.0" font-size="13" fill="#22D3EE">Grid.Portfolio</text>
+  <path d="M652.0 428.0H990.0" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="1002.0" y="417.0" width="98.0" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="432.0" font-size="13" fill="#F8FAFC" text-anchor="end">coming soon</text>
+  <text class="mono" x="540.0" y="450.0" font-size="13" fill="#22D3EE">Grid.LinkedIn</text>
+  <path d="M652.0 446.0H965.8" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="977.8" y="435.0" width="122.2" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="450.0" font-size="13" fill="#F8FAFC" text-anchor="end">adithyadevcoder</text>
+  <text class="mono" x="540.0" y="468.0" font-size="13" fill="#22D3EE">Grid.GitHub</text>
+  <path d="M652.0 464.0H951.0" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="963.0" y="453.0" width="136.9" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="468.0" font-size="13" fill="#F8FAFC" text-anchor="end">@Adithya-devcoder</text>
+  <text class="mono" x="540.0" y="486.0" font-size="13" fill="#22D3EE">Grid.LeetCode</text>
+  <path d="M652.0 482.0H943.7" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2 7" opacity="0.58"/>
+  <rect x="955.7" y="471.0" width="144.3" height="18" fill="#0E1728" opacity="0.96"/>
+  <text class="title" x="1094.0" y="486.0" font-size="13" fill="#F8FAFC" text-anchor="end">Adithya_S_devcoder</text>
+<text class="mono" x="540.0" y="518.0" font-size="12" fill="#94A3B8">&gt; More about me &amp; projects below in README</text>
+<rect x="883" y="505" width="8" height="17" fill="#22D3EE" opacity="0.13"/>
+<text class="title" x="895.0" y="518.0" font-size="12" fill="#22D3EE">v</text>
 </g>
 <path d="M42 562H1138" stroke="#1E293B" stroke-width="1" stroke-dasharray="5 8"/>
 <text class="mono" x="56.0" y="578.0" font-size="12" fill="#94A3B8">phase.1/banner :: generated source retained in /scripts and /assets/data</text>
