@@ -115,8 +115,8 @@ def card(project: dict[str, object], index: int) -> str:
     legend = []
     for i, (name, pct, color) in enumerate(languages):
         y = 76 + i * 18
-        legend.append(f'<circle cx="396" cy="{y}" r="4" fill="{color}"/>')
-        legend.append(f'<text x="407" y="{y + 4}" class="mono" font-size="11" fill="#CBD5E1">{esc(name)} {pct}%</text>')
+        legend.append(f'<circle cx="350" cy="{y}" r="4" fill="{color}"/>')
+        legend.append(f'<text x="361" y="{y + 4}" class="mono" font-size="10.5" fill="#CBD5E1">{esc(name)} {pct}%</text>')
 
     tags = []
     x = 73
@@ -144,7 +144,7 @@ def card(project: dict[str, object], index: int) -> str:
 <text x="73" y="67" class="title" font-size="17" fill="#F8FAFC">{esc(title)}<tspan fill="#22D3EE">_</tspan></text>
 {''.join(f'<text x="73" y="{88 + i * 15}" class="mono" font-size="11" fill="#CBD5E1">{esc(line)}</text>' for i, line in enumerate(description_lines))}
 {''.join(legend)}
-{donut(500, 91, 29, languages)}
+{donut(516, 91, 27, languages)}
 {''.join(tags)}
 <text x="73" y="158" class="mono" font-size="10" fill="#22D3EE">★ {project["stars"]}</text>
 <text x="119" y="158" class="mono" font-size="10" fill="#64748B">{esc(str(project["updated"]))}</text>

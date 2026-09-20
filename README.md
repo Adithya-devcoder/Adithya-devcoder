@@ -93,9 +93,11 @@
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
-<a href="https://www.instagram.com/__adith_ya.__s/">
-  <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" />
+<a href="https://leetcode.com/u/Adithya_S_devcoder/">
+  <img src="https://img.shields.io/badge/LeetCode-0A101F?style=for-the-badge&logo=leetcode&logoColor=F59E0B&labelColor=0A101F" alt="LeetCode" />
 </a>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0A101F" alt="Portfolio coming soon" />
 &nbsp;&nbsp;
 <a href="mailto:adithya.s.devcoder@gmail.com">
   <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
